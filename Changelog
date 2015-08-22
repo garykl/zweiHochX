@@ -1,0 +1,8 @@
+2015-07-21:
+- add hpptest target, testing that *hpp includes are sufficient
+- all classes in separate files
+- using namespace no more
+
+2015-08-22:
+- add licenses
+

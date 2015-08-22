@@ -1,0 +1,224 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+A	src/videoLoop.cpp	/^        cv::Mat A = cv::Mat::zeros(NRROW, NRCOL, CV_32FC1);$/;"	m	class:VideoLoop	file:
+B	src/videoLoop.cpp	/^        cv::Mat B = cv::Mat::zeros(NRROW, NRCOL, CV_32FC1);$/;"	m	class:VideoLoop	file:
+DER_KERNEL	include/ConfigConstants.h	18;"	d
+DR	include/FourierMask.hpp	/^	float DR = FF_NMAX \/ 2.0f; \/\/ aka Nspread$/;"	m	class:FourierMask
+DerivOutput	include/Filter.hpp	/^enum DerivOutput { picDx, picDy, picDr, picDphi, picDxx, picDxy, picDyy, picEVSmall, picEVLarge, picDerivInput };$/;"	g
+Derivatives	include/Filter.hpp	/^	Derivatives(unsigned int r, unsigned int c) :$/;"	f	class:Derivatives
+Derivatives	include/Filter.hpp	/^class Derivatives : public Filter$/;"	c
+FF_NMAX	include/ConfigConstants.h	7;"	d
+FPS	include/ConfigConstants.h	9;"	d
+Filter	include/Filter.hpp	/^	Filter(unsigned int r, unsigned int c):$/;"	f	class:Filter
+Filter	include/Filter.hpp	/^class Filter$/;"	c
+Fourier	include/Filter.hpp	/^	Fourier(unsigned int r, unsigned int c) :$/;"	f	class:Fourier
+Fourier	include/Filter.hpp	/^class Fourier : public Filter$/;"	c
+FourierMask	include/FourierMask.hpp	/^	FourierMask(unsigned int r, unsigned int c) :$/;"	f	class:FourierMask
+FourierMask	include/FourierMask.hpp	/^class FourierMask$/;"	c
+FourierOutput	include/Filter.hpp	/^enum FourierOutput { picFourierInput, picMask, picLength, picAngle, picInverseReal, picInverseImag };$/;"	g
+G	src/videoLoop.cpp	/^        cv::Mat G = cv::Mat::zeros(NRROW, NRCOL, CV_8UC1);$/;"	m	class:VideoLoop	file:
+GRIDDIM	include/ConfigConstants.h	1;"	d
+LISANGDIFF	include/ConfigConstants.h	16;"	d
+LISBOX	include/ConfigConstants.h	12;"	d
+LISDT	include/ConfigConstants.h	13;"	d
+LISOM1	include/ConfigConstants.h	14;"	d
+LISOM2	include/ConfigConstants.h	15;"	d
+NRCOL	include/ConfigConstants.h	5;"	d
+NRPIC	include/ConfigConstants.h	3;"	d
+NRROW	include/ConfigConstants.h	4;"	d
+Nextpic	include/Nextpicnr.hpp	/^        Nextpic(unsigned int maxpicnr):$/;"	f	class:Nextpic
+Nextpic	include/Nextpicnr.hpp	/^class Nextpic$/;"	c
+ParaSendSocket	include/ParaSendSocket.hpp	/^        ParaSendSocket() :$/;"	f	class:ParaSendSocket
+ParaSendSocket	include/ParaSendSocket.hpp	/^class ParaSendSocket {$/;"	c
+R0	include/FourierMask.hpp	/^	float R0 = FF_NMAX \/ 2.0f;  \/\/ aka NLevel$/;"	m	class:FourierMask
+Threshold	include/Filter.hpp	/^	Threshold(unsigned int r, unsigned int c) :$/;"	f	class:Threshold
+Threshold	include/Filter.hpp	/^class Threshold : public Filter$/;"	c
+ThresholdOutput	include/Filter.hpp	/^enum ThresholdOutput { picBeforeThres, picAfterThres };$/;"	g
+TimeFourier	include/Nextpicnr.hpp	/^        TimeFourier(unsigned int gridsize, unsigned int numberOfPics):$/;"	f	class:TimeFourier
+TimeFourier	include/Nextpicnr.hpp	/^class TimeFourier {$/;"	c
+VideoLoop	src/videoLoop.cpp	/^class VideoLoop {$/;"	c	file:
+analyse	include/ParaSendSocket.hpp	/^        void analyse(const cv::Mat& A)$/;"	f	class:ParaSendSocket
+apply	include/Filter.hpp	/^	virtual void apply(const Mat& a, Mat& b) {}$/;"	f	class:Filter
+apply	include/Filter.hpp	/^	void apply(const Mat& A, Mat &B)$/;"	f	class:Derivatives
+apply	include/Filter.hpp	/^	void apply(const Mat& A, Mat &Output)$/;"	f	class:Fourier
+apply	include/Filter.hpp	/^	void apply(const Mat&A, Mat &B)$/;"	f	class:Threshold
+cols	include/Filter.hpp	/^	unsigned int rows, cols;$/;"	m	class:Filter
+cols	include/FourierMask.hpp	/^	unsigned int rows, cols;$/;"	m	class:FourierMask
+completepath	include/Nextpicnr.hpp	/^        char completepath[1000];$/;"	m	class:TimeFourier
+completepath	src/videoLoop.cpp	/^        char completepath[1000];$/;"	m	class:VideoLoop	file:
+computeMask	include/FourierMask.hpp	/^	Mat computeMask(){$/;"	f	class:FourierMask
+computeWaveData	include/FourierMask.hpp	/^	void computeWaveData()$/;"	f	class:FourierMask
+controlDR	include/FourierMask.hpp	/^	signed char controlDR = 127;$/;"	m	class:FourierMask
+controlFLevel	include/Nextpicnr.hpp	/^        signed char controlFLevel = 64;$/;"	m	class:TimeFourier
+controlFLevel	src/videoLoop.cpp	/^        signed char controlFLevel = 64;$/;"	m	class:VideoLoop	file:
+controlFSpread	include/Nextpicnr.hpp	/^        signed char controlFSpread = 64;$/;"	m	class:TimeFourier
+controlFSpread	src/videoLoop.cpp	/^        signed char controlFSpread = 64;$/;"	m	class:VideoLoop	file:
+controlIntensityLevel	include/Filter.hpp	/^	signed char controlIntensityLevel = 64;$/;"	m	class:Threshold
+controlIntensitySpread	include/Filter.hpp	/^	signed char controlIntensitySpread = 32;$/;"	m	class:Threshold
+controlPhiD	include/FourierMask.hpp	/^	signed char controlPhiD = 127;$/;"	m	class:FourierMask
+controlPhiM	include/FourierMask.hpp	/^	signed char controlPhiM = 64;$/;"	m	class:FourierMask
+controlR0	include/FourierMask.hpp	/^	signed char controlR0 = 64;$/;"	m	class:FourierMask
+d_xx	include/Filter.hpp	/^	Mat d_xx, d_yy, d_xy, largeC, smallC;$/;"	m	class:Derivatives
+d_xy	include/Filter.hpp	/^	Mat d_xx, d_yy, d_xy, largeC, smallC;$/;"	m	class:Derivatives
+d_yy	include/Filter.hpp	/^	Mat d_xx, d_yy, d_xy, largeC, smallC;$/;"	m	class:Derivatives
+ddepth	include/Filter.hpp	/^	int ddepth = -1; \/\/source and destination of sobel have identical type$/;"	m	class:Derivatives
+decreaseIntensityLevel	include/Filter.hpp	/^	void decreaseIntensityLevel(){$/;"	f	class:Threshold
+decreaseIntensitySpread	include/Filter.hpp	/^	void decreaseIntensitySpread(){$/;"	f	class:Threshold
+decrementBandpassDR	include/FourierMask.hpp	/^	void decrementBandpassDR(){$/;"	f	class:FourierMask
+decrementBandpassR0	include/FourierMask.hpp	/^	void decrementBandpassR0(){$/;"	f	class:FourierMask
+decrementFourierFLevel	include/Nextpicnr.hpp	/^        void decrementFourierFLevel(){$/;"	f	class:TimeFourier
+decrementFourierFLevel	src/videoLoop.cpp	/^        void decrementFourierFLevel(){$/;"	f	class:VideoLoop	file:
+decrementFourierFSpread	include/Nextpicnr.hpp	/^        void decrementFourierFSpread(){$/;"	f	class:TimeFourier
+decrementFourierFSpread	src/videoLoop.cpp	/^        void decrementFourierFSpread(){$/;"	f	class:VideoLoop	file:
+decrement_phi_D	include/FourierMask.hpp	/^	void decrement_phi_D(){$/;"	f	class:FourierMask
+decrement_phi_M	include/FourierMask.hpp	/^	void decrement_phi_M(){$/;"	f	class:FourierMask
+delta	include/Filter.hpp	/^	int delta = 0;$/;"	m	class:Derivatives
+destination	include/ParaSendSocket.hpp	/^        boost::asio::ip::udp::endpoint* destination;$/;"	m	class:ParaSendSocket
+diskr	include/Filter.hpp	/^	Mat diskr,root;$/;"	m	class:Derivatives
+divide	include/ParaSendSocket.hpp	/^        float divide = 573.3005; \/\/heuristischer Parameter: divide=max_t(sqrt(dx^2+dy^2))$/;"	m	class:ParaSendSocket
+dt	include/ParaSendSocket.hpp	/^        float dt = LISDT;$/;"	m	class:ParaSendSocket
+exponentialControl	include/exponentialControl.h	/^std::vector<float> exponentialControl = std::initializer_list<float>({ 0.000f, 0.228f, 0.461f, 0.698f,$/;"	v
+fLevel	include/Nextpicnr.hpp	/^        int fLevel = griddim \/ 2;$/;"	m	class:TimeFourier
+fLevel	src/videoLoop.cpp	/^        int fLevel = GRIDDIM \/ 2;$/;"	m	class:VideoLoop	file:
+fSpread	include/Nextpicnr.hpp	/^        int fSpread = griddim \/ 4;$/;"	m	class:TimeFourier
+fSpread	src/videoLoop.cpp	/^        int fSpread = GRIDDIM \/ 4;$/;"	m	class:VideoLoop	file:
+fd_xx	include/Filter.hpp	/^	Mat fd_xx, fd_yy, fd_xy;$/;"	m	class:Derivatives
+fd_xy	include/Filter.hpp	/^	Mat fd_xx, fd_yy, fd_xy;$/;"	m	class:Derivatives
+fd_yy	include/Filter.hpp	/^	Mat fd_xx, fd_yy, fd_xy;$/;"	m	class:Derivatives
+fidx1	include/Nextpicnr.hpp	/^        int fidx1 = 0;$/;"	m	class:TimeFourier
+fidx1	src/videoLoop.cpp	/^        int fidx1 = 0;$/;"	m	class:VideoLoop	file:
+fidx2	include/Nextpicnr.hpp	/^        int fidx2 = 3 * griddim \/ 4;$/;"	m	class:TimeFourier
+fidx2	src/videoLoop.cpp	/^        int fidx2 = 3 * GRIDDIM \/ 4;$/;"	m	class:VideoLoop	file:
+filt_deriv	src/videoLoop.cpp	/^        Derivatives filt_deriv = Derivatives((unsigned int)NRROW, (unsigned int)NRCOL);$/;"	m	class:VideoLoop	file:
+filt_fourier	src/videoLoop.cpp	/^        Fourier filt_fourier = Fourier((unsigned int)NRROW, (unsigned int)NRCOL);$/;"	m	class:VideoLoop	file:
+filt_threshold	src/videoLoop.cpp	/^        Threshold filt_threshold = Threshold((unsigned int)NRROW, (unsigned int)NRCOL);$/;"	m	class:VideoLoop	file:
+fourmask	include/Filter.hpp	/^	FourierMask fourmask = FourierMask(rows, cols);$/;"	m	class:Fourier
+get	include/FourierMask.hpp	/^	Mat get(){$/;"	f	class:FourierMask
+getControlIntensityLevel	include/Filter.hpp	/^	signed char getControlIntensityLevel(){$/;"	f	class:Threshold
+getControlIntensitySpread	include/Filter.hpp	/^	signed char getControlIntensitySpread(){$/;"	f	class:Threshold
+grad_x	include/Filter.hpp	/^	Mat grad_x, grad_y;$/;"	m	class:Derivatives
+grad_y	include/Filter.hpp	/^	Mat grad_x, grad_y;$/;"	m	class:Derivatives
+griddim	include/Nextpicnr.hpp	/^        unsigned int griddim;$/;"	m	class:TimeFourier
+imgDesc	include/ParaSendSocket.hpp	/^        std::vector<float> imgDesc;$/;"	m	class:ParaSendSocket
+impr	include/Nextpicnr.hpp	/^        unsigned int mpr,impr;  \/\/ersteres: zaehlt ab 1, Bildnummer, zweiter, zaehlt ab 0, interner Zaehler$/;"	m	class:Nextpic
+increaseIntensityLevel	include/Filter.hpp	/^	void increaseIntensityLevel(){$/;"	f	class:Threshold
+increaseIntensitySpread	include/Filter.hpp	/^	void increaseIntensitySpread(){$/;"	f	class:Threshold
+incrementBandpassDR	include/FourierMask.hpp	/^	void incrementBandpassDR(){$/;"	f	class:FourierMask
+incrementBandpassR0	include/FourierMask.hpp	/^	void incrementBandpassR0(){$/;"	f	class:FourierMask
+incrementFourierFLevel	include/Nextpicnr.hpp	/^        void incrementFourierFLevel(){$/;"	f	class:TimeFourier
+incrementFourierFLevel	src/videoLoop.cpp	/^        void incrementFourierFLevel(){$/;"	f	class:VideoLoop	file:
+incrementFourierFSpread	include/Nextpicnr.hpp	/^        void incrementFourierFSpread(){$/;"	f	class:TimeFourier
+incrementFourierFSpread	src/videoLoop.cpp	/^        void incrementFourierFSpread(){$/;"	f	class:VideoLoop	file:
+increment_phi_D	include/FourierMask.hpp	/^	void increment_phi_D(){$/;"	f	class:FourierMask
+increment_phi_M	include/FourierMask.hpp	/^	void increment_phi_M(){$/;"	f	class:FourierMask
+initControlDR	include/FourierMask.hpp	/^	const signed char initControlDR = 127;$/;"	m	class:FourierMask
+initControlFLevel	include/Nextpicnr.hpp	/^        const signed char initControlFLevel = 96;$/;"	m	class:TimeFourier
+initControlFLevel	src/videoLoop.cpp	/^        const signed char initControlFLevel = 96;$/;"	m	class:VideoLoop	file:
+initControlFSpread	include/Nextpicnr.hpp	/^        const signed char initControlFSpread = 127;$/;"	m	class:TimeFourier
+initControlFSpread	src/videoLoop.cpp	/^        const signed char initControlFSpread = 127;$/;"	m	class:VideoLoop	file:
+initControlIntensityLevel	include/Filter.hpp	/^	const signed char initControlIntensityLevel = 64;$/;"	m	class:Threshold
+initControlIntensitySpread	include/Filter.hpp	/^	const signed char initControlIntensitySpread = 32;$/;"	m	class:Threshold
+initControlPhiD	include/FourierMask.hpp	/^	const signed char initControlPhiD = 127;$/;"	m	class:FourierMask
+initControlPhiM	include/FourierMask.hpp	/^	const signed char initControlPhiM = 64;$/;"	m	class:FourierMask
+initControlR0	include/FourierMask.hpp	/^	const signed char initControlR0 = 96; \/\/ center of interval in exponential control$/;"	m	class:FourierMask
+intensityLevel	include/Filter.hpp	/^	float intensityLevel = 0.5f;$/;"	m	class:Threshold
+intensitySpread	include/Filter.hpp	/^	float intensitySpread = 0.25f;$/;"	m	class:Threshold
+ioserv	include/ParaSendSocket.hpp	/^        boost::asio::io_service ioserv;$/;"	m	class:ParaSendSocket
+k	src/videoLoop.cpp	/^        int k=0; \/\/ zaehlt Bildnummer$/;"	m	class:VideoLoop	file:
+keyDown	include/keyboard_commands.h	/^void CinderProjectApp::keyDown(KeyEvent event)$/;"	f	class:CinderProjectApp
+largeC	include/Filter.hpp	/^	Mat d_xx, d_yy, d_xy, largeC, smallC;$/;"	m	class:Derivatives
+lim	include/FourierMask.hpp	/^	int lim = 0;$/;"	m	class:FourierMask
+limitRange	include/Filter.hpp	/^	float limitRange(float num, float max){$/;"	f	class:Filter
+limitRange	include/FourierMask.hpp	/^	float limitRange(float X, float Xmax){$/;"	f	class:FourierMask
+main	src/videoLoop.cpp	/^int main() {$/;"	f
+mask	include/FourierMask.hpp	/^	Mat mask = Mat::ones(rows, cols, CV_32FC1);$/;"	m	class:FourierMask
+maxIntensity	include/Filter.hpp	/^	float maxIntensity = 0.75f;$/;"	m	class:Threshold
+midiListener	include/MidiListener.h	/^void CinderProjectApp::midiListener(midi::Message msg){$/;"	f	class:CinderProjectApp
+minIntensity	include/Filter.hpp	/^	float minIntensity = 0.25f;$/;"	m	class:Threshold
+mpr	include/Nextpicnr.hpp	/^        unsigned int mpr,impr;  \/\/ersteres: zaehlt ab 1, Bildnummer, zweiter, zaehlt ab 0, interner Zaehler$/;"	m	class:Nextpic
+nextpic	include/Nextpicnr.hpp	/^        Nextpic nextpic;$/;"	m	class:TimeFourier
+nextpic	src/videoLoop.cpp	/^        Nextpic nextpic = Nextpic((unsigned int)NRPIC);$/;"	m	class:VideoLoop	file:
+nmax	include/FourierMask.hpp	/^	float nmax = 10.0f;$/;"	m	class:FourierMask
+nmin	include/FourierMask.hpp	/^	float nmin = 0.0f;$/;"	m	class:FourierMask
+nr	include/Nextpicnr.hpp	/^        unsigned int nr=0;$/;"	m	class:Nextpic
+operator ()	include/Filter.hpp	/^	void operator()(const Mat& a, Mat& b)$/;"	f	class:Filter
+operator ()	include/Nextpicnr.hpp	/^        cv::Mat operator()() {$/;"	f	class:TimeFourier
+operator ()	include/Nextpicnr.hpp	/^        int operator()(){$/;"	f	class:Nextpic
+operator ()	include/ParaSendSocket.hpp	/^        void operator()(const cv::Mat& A){$/;"	f	class:ParaSendSocket
+output	include/Filter.hpp	/^	DerivOutput output;$/;"	m	class:Derivatives
+output	include/Filter.hpp	/^	FourierOutput output = picFourierInput;$/;"	m	class:Fourier
+output	include/Filter.hpp	/^	ThresholdOutput output = picBeforeThres;$/;"	m	class:Threshold
+pause	include/Nextpicnr.hpp	/^        bool pause = false;$/;"	m	class:Nextpic
+phi_D	include/FourierMask.hpp	/^	float phi_D = M_PI \/ 2.0f;$/;"	m	class:FourierMask
+phi_M	include/FourierMask.hpp	/^	float phi_M = M_PI \/ 2.0f;$/;"	m	class:FourierMask
+picAfterThres	include/Filter.hpp	/^enum ThresholdOutput { picBeforeThres, picAfterThres };$/;"	e	enum:ThresholdOutput
+picAngle	include/Filter.hpp	/^enum FourierOutput { picFourierInput, picMask, picLength, picAngle, picInverseReal, picInverseImag };$/;"	e	enum:FourierOutput
+picBeforeThres	include/Filter.hpp	/^enum ThresholdOutput { picBeforeThres, picAfterThres };$/;"	e	enum:ThresholdOutput
+picDerivInput	include/Filter.hpp	/^enum DerivOutput { picDx, picDy, picDr, picDphi, picDxx, picDxy, picDyy, picEVSmall, picEVLarge, picDerivInput };$/;"	e	enum:DerivOutput
+picDphi	include/Filter.hpp	/^enum DerivOutput { picDx, picDy, picDr, picDphi, picDxx, picDxy, picDyy, picEVSmall, picEVLarge, picDerivInput };$/;"	e	enum:DerivOutput
+picDr	include/Filter.hpp	/^enum DerivOutput { picDx, picDy, picDr, picDphi, picDxx, picDxy, picDyy, picEVSmall, picEVLarge, picDerivInput };$/;"	e	enum:DerivOutput
+picDx	include/Filter.hpp	/^enum DerivOutput { picDx, picDy, picDr, picDphi, picDxx, picDxy, picDyy, picEVSmall, picEVLarge, picDerivInput };$/;"	e	enum:DerivOutput
+picDxx	include/Filter.hpp	/^enum DerivOutput { picDx, picDy, picDr, picDphi, picDxx, picDxy, picDyy, picEVSmall, picEVLarge, picDerivInput };$/;"	e	enum:DerivOutput
+picDxy	include/Filter.hpp	/^enum DerivOutput { picDx, picDy, picDr, picDphi, picDxx, picDxy, picDyy, picEVSmall, picEVLarge, picDerivInput };$/;"	e	enum:DerivOutput
+picDy	include/Filter.hpp	/^enum DerivOutput { picDx, picDy, picDr, picDphi, picDxx, picDxy, picDyy, picEVSmall, picEVLarge, picDerivInput };$/;"	e	enum:DerivOutput
+picDyy	include/Filter.hpp	/^enum DerivOutput { picDx, picDy, picDr, picDphi, picDxx, picDxy, picDyy, picEVSmall, picEVLarge, picDerivInput };$/;"	e	enum:DerivOutput
+picEVLarge	include/Filter.hpp	/^enum DerivOutput { picDx, picDy, picDr, picDphi, picDxx, picDxy, picDyy, picEVSmall, picEVLarge, picDerivInput };$/;"	e	enum:DerivOutput
+picEVSmall	include/Filter.hpp	/^enum DerivOutput { picDx, picDy, picDr, picDphi, picDxx, picDxy, picDyy, picEVSmall, picEVLarge, picDerivInput };$/;"	e	enum:DerivOutput
+picFourierInput	include/Filter.hpp	/^enum FourierOutput { picFourierInput, picMask, picLength, picAngle, picInverseReal, picInverseImag };$/;"	e	enum:FourierOutput
+picInverseImag	include/Filter.hpp	/^enum FourierOutput { picFourierInput, picMask, picLength, picAngle, picInverseReal, picInverseImag };$/;"	e	enum:FourierOutput
+picInverseReal	include/Filter.hpp	/^enum FourierOutput { picFourierInput, picMask, picLength, picAngle, picInverseReal, picInverseImag };$/;"	e	enum:FourierOutput
+picLength	include/Filter.hpp	/^enum FourierOutput { picFourierInput, picMask, picLength, picAngle, picInverseReal, picInverseImag };$/;"	e	enum:FourierOutput
+picMask	include/Filter.hpp	/^enum FourierOutput { picFourierInput, picMask, picLength, picAngle, picInverseReal, picInverseImag };$/;"	e	enum:FourierOutput
+processMidiControl	include/MidiListener.h	/^void CinderProjectApp::processMidiControl(signed char msgcontrol, signed char msgvalue){$/;"	f	class:CinderProjectApp
+reset	include/Filter.hpp	/^	virtual void reset() {}$/;"	f	class:Filter
+reset	include/Filter.hpp	/^	void reset()$/;"	f	class:Fourier
+reset	include/Filter.hpp	/^	void reset(){$/;"	f	class:Derivatives
+reset	include/Filter.hpp	/^	void reset(){$/;"	f	class:Threshold
+reset	include/FourierMask.hpp	/^	void reset(){$/;"	f	class:FourierMask
+reset	include/ParaSendSocket.hpp	/^        void reset(){$/;"	f	class:ParaSendSocket
+resetFourierTime	include/Nextpicnr.hpp	/^        void resetFourierTime(){$/;"	f	class:TimeFourier
+resetFourierTime	src/videoLoop.cpp	/^        void resetFourierTime(){$/;"	f	class:VideoLoop	file:
+root	include/Filter.hpp	/^	Mat diskr,root;$/;"	m	class:Derivatives
+rows	include/Filter.hpp	/^	unsigned int rows, cols;$/;"	m	class:Filter
+rows	include/FourierMask.hpp	/^	unsigned int rows, cols;$/;"	m	class:FourierMask
+scale	include/Filter.hpp	/^	int scale = 1;$/;"	m	class:Derivatives
+send	include/ParaSendSocket.hpp	/^        void send(){$/;"	f	class:ParaSendSocket
+setBandpassDR	include/FourierMask.hpp	/^	void setBandpassDR(signed char dr){$/;"	f	class:FourierMask
+setBandpassR0	include/FourierMask.hpp	/^	void setBandpassR0(signed char r0){$/;"	f	class:FourierMask
+setFidx	include/Nextpicnr.hpp	/^        void setFidx(){$/;"	f	class:TimeFourier
+setFidx	src/videoLoop.cpp	/^        void setFidx(){$/;"	f	class:VideoLoop	file:
+setFourierFLevel	include/Nextpicnr.hpp	/^        void setFourierFLevel(signed char fl){$/;"	f	class:TimeFourier
+setFourierFLevel	src/videoLoop.cpp	/^        void setFourierFLevel(signed char fl){$/;"	f	class:VideoLoop	file:
+setFourierFSpread	include/Nextpicnr.hpp	/^        void setFourierFSpread(signed char fs){$/;"	f	class:TimeFourier
+setFourierFSpread	src/videoLoop.cpp	/^        void setFourierFSpread(signed char fs){$/;"	f	class:VideoLoop	file:
+setIntensityLevel	include/Filter.hpp	/^	void setIntensityLevel(signed char lvl){$/;"	f	class:Threshold
+setIntensitySpread	include/Filter.hpp	/^	void setIntensitySpread(signed char sprd){$/;"	f	class:Threshold
+setMinMaxIntensity	include/Filter.hpp	/^	void setMinMaxIntensity(){$/;"	f	class:Threshold
+setNminNmax	include/FourierMask.hpp	/^	void setNminNmax(float Nlevel, float Nspread){$/;"	f	class:FourierMask
+setOutput	include/Filter.hpp	/^	virtual void setOutput(unsigned int n) {}$/;"	f	class:Filter
+setOutput	include/Filter.hpp	/^	void setOutput(DerivOutput n)$/;"	f	class:Derivatives
+setOutput	include/Filter.hpp	/^	void setOutput(FourierOutput n)$/;"	f	class:Fourier
+setOutput	include/Filter.hpp	/^	void setOutput(ThresholdOutput n){$/;"	f	class:Threshold
+set_nmax	include/FourierMask.hpp	/^	void set_nmax(float n){$/;"	f	class:FourierMask
+set_nmin	include/FourierMask.hpp	/^	void set_nmin(float n){$/;"	f	class:FourierMask
+set_phi_D	include/FourierMask.hpp	/^	void set_phi_D(signed char phi){$/;"	f	class:FourierMask
+set_phi_M	include/FourierMask.hpp	/^	void set_phi_M(signed char phi){$/;"	f	class:FourierMask
+shift	include/Filter.hpp	/^	void shift(Mat &B){$/;"	f	class:Fourier
+shiftx	include/ParaSendSocket.hpp	/^        float shiftx, shifty;$/;"	m	class:ParaSendSocket
+shifty	include/ParaSendSocket.hpp	/^        float shiftx, shifty;$/;"	m	class:ParaSendSocket
+smallC	include/Filter.hpp	/^	Mat d_xx, d_yy, d_xy, largeC, smallC;$/;"	m	class:Derivatives
+sock	include/ParaSendSocket.hpp	/^        boost::asio::ip::udp::socket* sock;$/;"	m	class:ParaSendSocket
+spock	src/videoLoop.cpp	/^        ParaSendSocket spock;$/;"	m	class:VideoLoop	file:
+t	include/ParaSendSocket.hpp	/^        float t = 0;$/;"	m	class:ParaSendSocket
+triggerPreset	include/presets.h	/^void CinderProjectApp::triggerPreset(int presetNum){$/;"	f	class:CinderProjectApp
+update	src/videoLoop.cpp	/^        cv::Mat& update()$/;"	f	class:VideoLoop
+updateFlag	include/FourierMask.hpp	/^	bool updateFlag;$/;"	m	class:FourierMask
+vwrw	include/Nextpicnr.hpp	/^        bool vwrw=1; \/\/vorwaerts: 1, rueckwaerts: 0$/;"	m	class:Nextpic
+waveNum	include/FourierMask.hpp	/^	Mat waveNum;$/;"	m	class:FourierMask
+wavePhi	include/FourierMask.hpp	/^	Mat wavePhi;$/;"	m	class:FourierMask
+x	include/ParaSendSocket.hpp	/^        float x, y;$/;"	m	class:ParaSendSocket
+y	include/ParaSendSocket.hpp	/^        float x, y;$/;"	m	class:ParaSendSocket
